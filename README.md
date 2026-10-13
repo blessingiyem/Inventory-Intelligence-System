@@ -1,117 +1,104 @@
 # Inventory Intelligence System
 
-An automated inventory analytics system designed to transform raw inventory and purchase-order data into actionable business insights.
+An end-to-end inventory analytics project that demonstrates how data automation, relational database design, SQL analysis, and business intelligence can be combined to support inventory decision-making.
 
 ## Project Overview
 
-The Inventory Intelligence System combines Python, SQL, PostgreSQL, and Tableau to create a repeatable analytics workflow for inventory management.
+The Inventory Intelligence System transforms inventory data into actionable business insights.
 
-The system generates structured inventory and purchase-order data, stores it in a relational database, calculates business metrics through SQL, and presents the resulting insights through an interactive Tableau dashboard.
+The workflow covers:
 
-The project focuses on answering practical business questions such as:
+- Data generation and preparation
+- PostgreSQL database design
+- SQL-based business analysis
+- Inventory performance metrics
+- Tableau dashboard development
+- Interactive business intelligence
+- Data-driven decision support
 
-- How much capital is currently tied up in inventory?
-- What is the potential sales value of the current inventory?
-- How much potential profit could the inventory generate?
-- Which product categories represent the greatest inventory value?
-- Which categories have the highest potential sales and profit?
-- How many products are currently represented in the inventory?
+## Analytics Workflow
 
-## Key Features
+The project follows a structured analytics workflow:
 
-### Automated Data Generation
+1. Generate inventory data
+2. Store the data in PostgreSQL
+3. Analyse the data using SQL
+4. Calculate key business metrics
+5. Build interactive Tableau visualisations
+6. Present the results through an inventory intelligence dashboard
 
-Python is used to generate realistic inventory and purchase-order records for the analytics workflow.
+## Key Business Metrics
 
-### Relational Database
-
-PostgreSQL stores the structured inventory and purchase-order data using a relational schema.
-
-### SQL Analytics
-
-SQL queries transform the raw database records into business-focused metrics and category-level summaries.
-
-### Interactive Dashboard
-
-Tableau is used to visualize the resulting metrics through an interactive inventory intelligence dashboard.
-
-The dashboard includes:
+The dashboard focuses on four core inventory metrics:
 
 - Total Inventory Value
 - Potential Sales Value
 - Potential Profit
 - Total Products
-- Inventory Value by Category
-- Potential Sales by Category
-- Potential Profit by Category
-- Total Products by Category
 
-Dashboard filtering allows users to select a product category and see the related metrics update across the dashboard.
+## Dashboard Analysis
 
-## Technology Stack
+The Tableau dashboard provides category-level analysis across:
 
-| Technology | Purpose |
-|---|---|
-| Python | Data generation and automation |
-| PostgreSQL | Data storage and relational database |
-| SQL | Data transformation and analysis |
-| Tableau Public | Interactive visualization |
-| VS Code | Development environment |
-| GitHub | Version control and project documentation |
+- Inventory Value
+- Potential Sales Value
+- Potential Profit
+- Total Products
+
+Users can select a category to interactively filter the dashboard and investigate inventory performance.
+
+## Business Impact
+
+The project demonstrates how an automated analytics workflow can reduce manual reporting effort and make inventory information easier to interpret.
+
+Instead of manually calculating inventory metrics and preparing reports, the workflow provides a structured process for generating data, storing it, analysing it, and presenting the results.
+
+This creates a foundation for automated inventory reporting and data-driven decision support.
+
+## Tableau Public Dashboard
+
+View the interactive dashboard on Tableau Public:
+
+[View the Inventory Intelligence Dashboard](https://public.tableau.com/app/profile/blessing.iyem/viz/InventoryDashboard_1790853706310/Dashboard1)
 
 ## Project Structure
 
-```text
-Inventory-Intelligence-System/
-│
-├── analysis/
-│   └── SQL analysis and analytical queries
-│
-├── app/
-│   └── Application components
-│
-├── data/
-│   └── generate_data.py
-│
-├── database/
-│   └── schema.sql
-│
-├── docs/
-│   └── Project documentation
-│
-├── planning/
-│   └── requirements.md
-│
-├── screenshots/
-│   └── Dashboard screenshots
-│
-└── README.md
-Analytics Workflow
-Python
-   ↓
-Generate Inventory Data
-   ↓
-PostgreSQL Database
-   ↓
-SQL Analysis
-   ↓
-Business Metrics
-   ↓
-Tableau Dashboard
-   ↓
-Interactive Inventory Insights
+    Inventory-Intelligence-System/
+    │
+    ├── analysis/
+    │
+    ├── app/
+    │
+    ├── data/
+    │   └── generate_data.py
+    │
+    ├── database/
+    │   └── schema.sql
+    │
+    ├── docs/
+    │
+    ├── planning/
+    │   └── requirements.md
+    │
+    ├── screenshots/
+    │
+    ├── .gitignore
+    │
+    └── README.md
 
-Business Impact
-The project demonstrates how an automated analytics workflow can reduce manual reporting effort and make inventory information easier to interpret.
-Instead of manually calculating inventory metrics and preparing reports, the workflow provides a structured process for generating data, storing it, analyzing it, and presenting the results.
-This makes the system suitable as a foundation for automated inventory reporting and decision support.
-Dashboard
-The final dashboard provides a high-level view of inventory performance and allows users to investigate individual product categories.
-The Tableau Public version of the dashboard is available here:
-Tableau Public:
-https://public.tableau.com/
-Project Goals
+## Technologies Used
+
+- Python
+- PostgreSQL
+- SQL
+- Tableau Public
+- Git
+- GitHub
+
+## Project Goals
+
 This project was built to demonstrate practical experience with:
+
 - Data automation
 - Relational database design
 - SQL analytics
@@ -119,8 +106,11 @@ This project was built to demonstrate practical experience with:
 - Dashboard development
 - Data-driven decision support
 - End-to-end analytics workflows
-Future Improvements
+
+## Future Improvements
+
 Potential extensions include:
+
 - Automated database refreshes
 - Scheduled dashboard updates
 - Inventory stock-level alerts
@@ -129,5 +119,9 @@ Potential extensions include:
 - Purchase-order trend analysis
 - Additional profitability metrics
 - Automated reporting
-Author: Blessing Iyem
-Role: Data Analyst
+
+## Author
+
+**Blessing Iyem**
+
+**Role:** Data Analyst
